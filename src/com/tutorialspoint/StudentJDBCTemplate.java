@@ -7,49 +7,58 @@ import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class StudentJDBCTemplate implements StudentDAO {
-   @SuppressWarnings("unused")
-   private DataSource dataSource;
-   private JdbcTemplate jdbcTemplateObject;
-   
-   public void setDataSource(DataSource dataSource) {
-      this.dataSource = dataSource;
-      this.jdbcTemplateObject = new JdbcTemplate(dataSource);
-   }
 
-   public void create(String name, Integer age) {
-      String SQL = "insert into Student (name, age) values (?, ?)";
-      
-      jdbcTemplateObject.update( SQL, name, age);
-      System.out.println("Created Record Name = " + name + " Age = " + age);
-      return;
-   }
+	@SuppressWarnings("unused")
+	private DataSource dataSource;
+	private JdbcTemplate jdbcTemplateObject;
 
-   public Student getStudent(Integer id) {
-      String SQL = "select * from Student where id = ?";
-      Student student = jdbcTemplateObject.queryForObject(SQL, 
-                        new Object[]{id}, new StudentMapper());
-      return student;
-   }
+	public void setDataSource(DataSource dataSource) {
+		//System.out.println("We are inside the setter");
+		this.dataSource = dataSource;
+		this.jdbcTemplateObject = new JdbcTemplate(dataSource);
+	}
 
-   public List<Student> listStudents() {
-      String SQL = "select * from Student";
-      List <Student> students = jdbcTemplateObject.query(SQL, 
-                                new StudentMapper());
-      return students;
-   }
+	/*
+	public void createTable(String name) {
+		String sql;
+		sql = String.format("CREATE table %s (id int(10), name varchar(25))", name);
+		
+		jdbcTemplateObject.execute(sql);
+	}
+	*/
+	
+	public void create(String name, Integer age) {
+		String SQL = "insert into Student (name, age) values (?, ?)";
 
-   public void delete(Integer id){
-      String SQL = "delete from Student where id = ?";
-      jdbcTemplateObject.update(SQL, id);
-      System.out.println("Deleted Record with ID = " + id );
-      return;
-   }
+		jdbcTemplateObject.update(SQL, name, age);
+		System.out.println("Created Record: \tName = " + name + " \tAge = " + age);
+		return;
+	}
 
-   public void update(Integer id, Integer age){
-      String SQL = "update Student set age = ? where id = ?";
-      jdbcTemplateObject.update(SQL, age, id);
-      System.out.println("Updated Record with ID = " + id );
-      return;
-   }
+	public Student getStudent(Integer id) {
+		String SQL = "select * from Student where id = ?";
+		Student student = jdbcTemplateObject.queryForObject(SQL, new Object[] { id }, new StudentMapper());
+		return student;
+	}
+
+	public List<Student> listStudents() {
+		String SQL = "select * from Student";
+		List<Student> students = jdbcTemplateObject.query(SQL, new StudentMapper());
+		return students;
+	}
+
+	public void delete(Integer id) {
+		String SQL = "delete from Student where id = ?";
+		jdbcTemplateObject.update(SQL, id);
+		System.out.println("Deleted Record with ID = " + id);
+		return;
+	}
+
+	public void update(Integer id, Integer age) {
+		String SQL = "update Student set age = ? where id = ?";
+		jdbcTemplateObject.update(SQL, age, id);
+		System.out.println("Updated Record with ID = " + id);
+		return;
+	}
 
 }
