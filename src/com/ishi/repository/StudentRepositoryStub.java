@@ -1,5 +1,6 @@
 package com.ishi.repository;
 
+import java.sql.Date;
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -19,11 +20,28 @@ public class StudentRepositoryStub {
 			this.jdbcTemplateObject = new JdbcTemplate(dataSource);
 		}
 
-		public void create(String name, Integer age) {
-			String SQL = "insert into Student (name, age) values (?, ?)";
-
-			jdbcTemplateObject.update(SQL, name, age);
-			System.out.println("Created Record: \tName = " + name + " \tAge = " + age);
+		//Register the student and make entry in the database
+		public void create(Student student) {
+			String SQL = "INSERT INTO `Internship`.`student` (`first_name`, `last_name`, `dob`,"
+					+ " `email`, `mobile`, `address`, `city`, `pincode`, `state`, `country`, `courses`)"
+					+"VALUES (?,?,?,?,?,?,?,?,?,?,?)";
+			
+			int id = student.getId();
+			String firstName = student.getFirstName();
+			String lastName = student.getLastName();
+			Date dob = student.getDob();
+			String email = student.getEmail();
+			String mobile = student.getMobile();
+			String address = student.getAddress();
+			String pincode = student.getPincode();
+			String city = student.getCity();
+			String state = student.getState();
+			String country = student.getCountry();
+			String courses = student.getCourses();
+			
+			//jdbcTemplateObject.update(SQL, student);
+			jdbcTemplateObject.update(SQL, firstName, lastName, dob, email, mobile, address, city, pincode, state, country, courses);
+			System.out.println("Created Record: \tName = " + firstName);
 			return;
 		}
 
@@ -39,15 +57,16 @@ public class StudentRepositoryStub {
 			return students;
 		}
 
+		//Delete the student account having ID=id
 		public void delete(Integer id) {
-			String SQL = "delete from Student where id = ?";
+			String SQL = "delete from `student` where id = ?";
 			jdbcTemplateObject.update(SQL, id);
 			System.out.println("Deleted Record with ID = " + id);
 			return;
 		}
 
 		public void update(Integer id, Integer age) {
-			String SQL = "update Student set age = ? where id = ?";
+			String SQL = "update student set age = ? where id = ?";
 			jdbcTemplateObject.update(SQL, age, id);
 			System.out.println("Updated Record with ID = " + id);
 			return;

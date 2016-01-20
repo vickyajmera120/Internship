@@ -10,11 +10,11 @@ public class Student {
 	private String email;
 	private String mobile;
 	private String address;
-	private String pincode;
 	private String city;
+	private String pincode;
 	private String state;
 	private String country;
-	private String Courses;
+	private String courses;
 	
 	public String getAddress() {
 		return address;
@@ -28,7 +28,7 @@ public class Student {
 	}
 
 	public String getCourses() {
-		return Courses;
+		return courses;
 	}
 
 	public Date getDob() {
@@ -76,7 +76,7 @@ public class Student {
 	}
 
 	public void setCourses(String courses) {
-		Courses = courses;
+		this.courses = courses;
 	}
 
 	public void setDob(Date date) {
