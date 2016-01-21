@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+<<<<<<< HEAD
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
+=======
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+>>>>>>> 905e0f3be6706747e378618710edcfad3be885d8
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
@@ -35,5 +40,81 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-aop-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-aop-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-aop-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-aspects-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-aspects-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-aspects-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-beans-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-beans-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-beans-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-build-src-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-context-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-context-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-context-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-context-support-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-context-support-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-context-support-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-core-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-core-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-core-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-expression-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-expression-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-expression-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-instrument-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-instrument-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-instrument-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-instrument-tomcat-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-instrument-tomcat-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-instrument-tomcat-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-jdbc-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-jdbc-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-jdbc-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-jms-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-jms-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-jms-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-orm-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-orm-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-orm-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-oxm-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-oxm-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-oxm-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-struts-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-struts-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-struts-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-test-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-test-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-test-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-tx-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-tx-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-tx-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-web-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-web-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-web-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-webmvc-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-webmvc-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-webmvc-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-webmvc-portlet-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-webmvc-portlet-3.2.3.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE/libs/spring-webmvc-portlet-3.2.3.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="src/org.springframework.jdbc-3.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/org.springframework.transaction-3.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/workspace2/mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry kind="lib" path="/home/vicky.ajmera/Downloads/spring-framework-3.2.3.RELEASE-dist.zip"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+>>>>>>> 905e0f3be6706747e378618710edcfad3be885d8
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
